@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bd670b9dc4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Shopkart - One single place for Everything</title>
+</head>
+<body>
+    <header class="d-flex-b">
+        <div class="header-logo">
+            <a href="index.html" class="logo"><i class="fa-brands fa-shopify"></i>Shopkart</a>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here ... ">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <div class="header-nav">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="login.html" class="fas fa-user"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    <main class="d-flex-e">
+        <div class="main-content">
+            <img src="images/main-img-1.webp" alt="">
+            <p class="offers">top offers</p>
+        </div>
+        <div class="main-content">
+            <img src="images/main-img-2.webp" alt="">
+            <p class="offers">Mobiles & Tablets</p>
+        </div>
+        <div class="main-content">
+            <img src="images/main-img-3.webp" alt="">
+            <p class="offers">Electronics</p>
+        </div>
+        <div class="main-content">
+            <img src="images/main-img-4.webp" alt="">
+            <p class="offers">TVs & Appliances</p>
+        </div>
+        <div class="main-content">
+            <img src="images/main-img-5.webp" alt="">
+            <p class="offers">Fashion</p>
+        </div>
+        <div class="main-content">
+            <img src="images/main-img-6.webp" alt="">
+            <p class="offers">Beauty</p>
+        </div>
+        <div class="main-content">
+            <img src="images/main-img-7.webp" alt="">
+            <p class="offers">Home & Furniture</p>
+        </div>
+        <div class="main-content">
+            <img src="images/main-img-8.webp" alt="">
+            <p class="offers">Flights</p>
+        </div>
+        <div class="main-content">
+            <img src="images/main-img-9.webp" alt="">
+            <p class="offers">Grocery</p>
+        </div>
+    </main>
+    <section id="image-slider">
+        <div class="slide d-flex-a">
+            <div class="image">
+                <img src="images/home-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>upto 50% off</span>
+                <h3>smartphones</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+        <div class="slide d-flex-a">
+            <div class="image">
+                <img src="images/home-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>upto 50% off</span>
+                <h3>smartwatch</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+        <div class="slide d-flex-a">
+            <div class="image">
+                <img src="images/home-img-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>upto 50% off</span>
+                <h3>headphones</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+        <span class="left" onclick="goPrev()">&#10094;</span>
+        <span class="right" onclick="goNext()">&#10095;</span>
+    </section>
+    <section id="top-offers-section" class="d-flex-b">
+        <div class="top-offers t-f-head">
+            <h3>top offers</h3>
+            <button class="btn">view all</button>
+        </div>
+        <a href="#" class="top-offers">
+            <img src="images/banner-1.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>upto 50% off</h3>
+            </div>
+        </a>
+        <a href="#" class="top-offers">
+            <img src="images/banner-2.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>from Rs.899</h3>
+            </div>
+        </a>
+        <a href="#" class="top-offers">
+            <img src="images/banner-3.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>min 50% off</h3>
+            </div>
+        </a>
+    </section>
+    <section id="new-arrival">
+        <h2>new <span>Arrival</span></h2>
+        <div class="arrivals">
+            <div class="arrival d-flex-c">
+                <div class="image">
+                    <img src="images/arrival-1.jpg" class="main-img" alt="">
+                    <img src="images/arrival-1-hover.jpg" class="hover-img" alt="">
+                </div>
+                <div class="content">
+                    <h3>HD television</h3>
+                    <div class="price"> $249.99 <span>$399.99</span> </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="arrival d-flex-c">
+                <div class="image">
+                    <img src="images/arrival-2.jpg" class="main-img" alt="">
+                    <img src="images/arrival-2-hover.jpg" class="hover-img" alt="">
+                </div>
+                <div class="content">
+                    <h3>Laptops</h3>
+                    <div class="price"> $249.99 <span>$399.99</span> </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="arrival d-flex-c">
+                <div class="image">
+                    <img src="images/arrival-3.jpg" class="main-img" alt="">
+                    <img src="images/arrival-3-hover.jpg" class="hover-img" alt="">
+                </div>
+                <div class="content">
+                    <h3>smartphones</h3>
+                    <div class="price"> $249.99 <span>$399.99</span> </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="arrival d-flex-c">
+                <div class="image">
+                    <img src="images/arrival-4.jpg" class="main-img" alt="">
+                    <img src="images/arrival-4-hover.jpg" class="hover-img" alt="">
+            </div>
+            <div class="content">
+                <h3>printers</h3>
+                <div class="price"> $249.99 <span>$399.99</span> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="arrival d-flex-c">
+            <div class="image">
+                <img src="images/arrival-5.jpg" class="main-img" alt="">
+                <img src="images/arrival-5-hover.jpg" class="hover-img" alt="">
+            </div>
+            <div class="content">
+                <h3>headphones</h3>
+                <div class="price"> $249.99 <span>$399.99</span> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="arrival d-flex-c">
+            <div class="image">
+                <img src="images/arrival-6.jpg" class="main-img" alt="">
+                <img src="images/arrival-6-hover.jpg" class="hover-img" alt="">
+            </div>
+            <div class="content">
+                <h3>speakers</h3>
+                <div class="price"> $249.99 <span>$399.99</span> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&#169; shopkart.com | All rights reserved</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="cards">
+                <img src="images/card_img.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

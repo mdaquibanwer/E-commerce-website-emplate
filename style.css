@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Sora:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+:root{
+    font-size: 62.5%;
+    --primary-color : #2874f0;
+    --white-color : rgb(236, 232, 232);
+    --gold-color : gold;
+    --font-color : #222;
+}
+h1,h2.h3.h4,h5,h6{
+    font-family: 'Arimo', sans-serif;
+}
+section{
+    margin: 3rem 5%;
+    box-shadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+span{
+    color: var(--primary-color);
+    font-family: 'Sora', sans-serif;
+}
+/* --------- UTILITY CLASSES ------------ */
+.btn {
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+}
+.btn:hover{
+    background-color: var(--font-color);
+    transition: 0.5s linear;
+}
+.d-flex-a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.d-flex-b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-flex-e{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*----------- utility classes ends ----------*/
+
+/* --------------header----------- */
+header{
+    width: 100vw;
+    height: 7rem;
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 1000;
+}
+.header-logo a{
+    font-family: 'Arimo', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-left: 10rem
+}
+.header-logo a i{
+    margin-right: 0.4rem;
+    color: var(--gold-color);
+}
+header form{
+    background-color: var(--white-color);
+}
+header form input{
+    width: 40rem;
+    height: 4.5rem;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--font-color);
+}
+header form button{
+    width: 5rem;
+    height: 4.5rem;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+header form button i:hover{
+    color: var(--primary-color);
+}
+header .header-nav{
+    margin-right: 10rem;
+}
+header .header-nav a,
+header .header-nav div {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+header .header-nav a:hover,
+header .header-nav div:hover {
+  color: var(--gold-color);
+  transition: 0.2s linear;
+}
+header .header-nav #search-btn {
+  display: none;
+}
+/* ------------Header Section Ends ------------- */
+
+/* ------------main Section starts ------------- */
+
+main{
+    height: 18rem;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2);
+}
+.main-content:hover{
+    color: var(--primary-color);
+}
+main img{
+    width: 7rem;
+    cursor: pointer;
+}
+main p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* ---------- main section ends ---------------- */
+
+/* ----------- image slider section ----------- */
+
+section#image-slider{
+    min-height: 40rem;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    font-family: 'Arimo', sans-serif;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.slide .image{
+    width: 50%;
+    padding-left: 10rem;
+}
+.slide .image img{
+    width: 70%;
+}
+.slide .content{
+    text-align: left;
+    width: 50%;
+}
+.slide .content span{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.slide .content h3{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#image-slider .left,.right{
+    position: absolute;
+    cursor: pointer;
+    font-size: 5rem;
+    font-weight: 400;
+    top: 45%;
+}
+#image-slider .right{
+    right: 0;
+}
+
+/* ----------img slider section ends ----------*/
+
+/* ----------top offers section starts ----------*/
+
+section#top-offers-section{
+    height: 30rem;
+    background-color: #f5f5f5;
+}
+.top-offers{
+    width: 25%;
+    text-align: center;
+}
+.t-f-head h3{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+}
+.top-offers img{
+    margin-bottom: 1rem;
+    height: 90%;
+    width: 90%;
+}
+.top-offers img:hover{
+    transform: scale(1.1);
+    transition: 0.2s linear;
+}
+.top-offers .content span{
+    font-size: 1.5rem;
+}
+.top-offers .content h3{
+    font-size: 2rem;
+    color: var(--font-color);
+    margin-top: 0.5rem;
+}
+
+/* ----------top offers section ends ----------*/
+
+/* ----------new arrival section starts ----------*/
+#new-arrival h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Sora', sans-serif;
+    padding: 2rem;
+}
+.arrivals{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+.arrival{
+    margin: 2rem;
+    cursor: pointer;
+    border: 0.5rem solid #ddd;
+    height: 20rem;
+}
+.arrival .image .hover-img{
+    display: none;
+}
+.arrival .image{
+    width: 40%;
+}
+.arrival .image img{
+    width: 100%;
+}
+
+.arrival:hover .image .main-img{
+    display: none;
+}
+.arrival:hover .image .hover-img{
+    display: inline-block;
+    transition: 0.5s linear;
+}
+.arrival .content{
+    padding-left: 0.5rem;
+}
+.arrival .content h3{
+    font-size: 2.4rem;
+    font-family: 'Arimo', sans-serif;
+    color: var(--font-color);
+}
+.arrival .content .price{
+    font-size: 2rem;
+    font-family: 'Sora', sans-serif;
+    padding-top: 0.5rem;
+}
+.arrival .content .price span{
+    font-size: 1.5rem;
+    font-family: 'Sora', sans-serif;
+    padding-top: 0.5rem;
+    text-decoration: line-through;
+}
+.arrival .content i{
+    color: var(--gold-color);
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+/* --------- footer section start ---------- */
+
+footer{
+    height: 10rem;
+    background-color: rgb(16, 16, 41);
+    color: var(--white-color);
+    font-family: 'Arimo', sans-serif;
+}
+.footer-content{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.footer-content p{
+    font-size: 2rem;
+    padding: 4rem 0rem 0rem 5rem;
+}
+.footer-content .share{
+    padding: 4rem 0rem 0rem 16rem;
+}
+.footer-content .share a{
+    font-size: 3rem;
+    color: var(--white-color);
+    padding-right: 1rem;
+}
+.footer-content .share a:hover{
+    color: var(--gold-color);
+    transition: 0.3s ease;
+}
+.footer-content .cards{
+    padding: 3rem 0rem 0rem 5rem;
+}
