@@ -129,6 +129,98 @@ header .header-nav #search-btn {
 }
 /* ------------Header Section Ends ------------- */
 
+/* ----------side bar section starts ------------ */
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    height: 100%;
+    width: 30rem;
+    background: #fff;
+    z-index: 10000;
+}
+.side-bar.active{
+    left: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);;
+    transition: 0.2s linear;
+}
+.side-bar #close-side-bar {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #666;
+    transform: rotate(-90deg);
+    font-weight: 800;
+    transition: 0.3s ease-in;
+}
+  
+.side-bar #close-side-bar:hover {
+    transform: rotate(90deg);
+    transition: 0.3s ease-in;
+    color: var(--font-color);
+}
+  
+.side-bar .user {
+    padding: 2rem;
+    background: var(--white-color);
+    text-align: center;
+}
+  
+.side-bar .user img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    border: 1rem solid #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    margin-bottom: .5rem;
+}
+  
+.side-bar .user h3 {
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.side-bar .user a {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-family: 'Sora', sans-serif;
+}
+  
+.side-bar .user a:hover {
+    color: var(--font-color);
+    transition: 0.3s linear;
+}
+  
+.side-bar .navbar {
+    padding-top: 1rem;
+}
+  
+.side-bar .navbar a {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.side-bar .navbar a:hover {
+    color: var(--primary-color);
+    
+}
+.side-bar .navbar a:hover i {
+    padding-right: 2rem;
+    transition: 0.2s linear;  
+}
+.side-bar .navbar a i {
+    padding-right: .5rem;
+}
+
+/* ----------side bar section starts ------------ */
+
 /* ------------main Section starts ------------- */
 
 main{
@@ -330,3 +422,115 @@ footer{
 .footer-content .cards{
     padding: 3rem 0rem 0rem 5rem;
 }
+
+/* ----------- home page ends ------------ */
+/* ----------- about page starts ------------ */
+#about{
+    padding-top: 10rem;
+    font-family: 'Arimo', sans-serif;
+}
+.about-us{
+    height: 40rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    margin: 0 5%;
+    text-align: left;
+    background-color: #fff;
+    align-items: normal;
+}
+.about-us .companylogo{
+    width: 40%;
+    height: 100%;
+}
+.about-us .content{
+    width: 60%;
+    padding: 0 10rem;
+}
+.about-us .companylogo img{
+    height: 100%;
+    width: 100%;
+}
+.about-us .companylogo p{
+    text-align: center;
+}
+.about-us .content h2{
+    font-size: 3rem;
+    padding: 2rem 0;
+    color: var(--font-color);
+}
+.about-us .content p{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+}
+.about-us .content .btn{
+    margin-top: 2rem;
+}
+/* ---------------- FAQs section starts --------------- */
+#faqs{
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: none;
+}
+#faqs h2{
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: var(--primary-color);
+}
+#faqs .accordion-container {
+    max-width: 70rem;
+    margin: 2rem auto;
+}
+
+#faqs .accordion-container .accordion{
+    background: #fff;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+#faqs .accordion-container .accordion:last-child {
+    margin-bottom: .5rem;
+}
+
+#faqs .accordion-container .accordion.active .accordion-heading {
+    transition: 0.3s linear;
+    background: var(--primary-color);
+}
+
+#faqs .accordion-container .accordion.active .accordion-heading i {
+    transform: rotate(180deg);
+    transition: 0.3s linear;
+}
+
+#faqs .accordion-container .accordion.active .accordion-content {
+    display: block;
+    transition: 0.3s linear;
+}
+
+#faqs .accordion-container .accordion .accordion-heading {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--font-color);
+    cursor: pointer;
+}
+
+#faqs .accordion-container .accordion .accordion-heading h3 {
+  font-size: 2rem;
+  color: var(--white-color);
+}
+
+#faqs .accordion-container .accordion .accordion-heading i {
+  font-size: 2rem;
+  color: var(--white-color)
+}
+
+#faqs .accordion-container .accordion-content {
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #666;
+    display: none;
+}
+
+/*-------------------- about page end------------- */
