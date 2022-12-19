@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    text-transform: capitalize;
+    text-transform: capitalize; 
 }
 
 :root{
@@ -15,13 +15,15 @@
     --white-color : rgb(236, 232, 232);
     --gold-color : gold;
     --font-color : #222;
+    overflow-x: hidden;
 }
-h1,h2.h3.h4,h5,h6{
+h1,h,h3,h4,h5,h6{
     font-family: 'Arimo', sans-serif;
 }
 section{
     margin: 3rem 5%;
     box-shadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: var(--white-color);
 }
 
 span{
@@ -72,7 +74,8 @@ header{
     width: 100vw;
     height: 7rem;
     background-color: var(--primary-color);
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 .header-logo a{
@@ -224,9 +227,7 @@ header .header-nav #search-btn {
 /* ------------main Section starts ------------- */
 
 main{
-    height: 18rem;
-    padding-top: 8rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2);
@@ -269,6 +270,7 @@ section#image-slider{
 .slide .content{
     text-align: left;
     width: 50%;
+    height: 50%;
 }
 .slide .content span{
     display: block;
@@ -426,13 +428,11 @@ footer{
 /* ----------- home page ends ------------ */
 /* ----------- about page starts ------------ */
 #about{
-    padding-top: 10rem;
     font-family: 'Arimo', sans-serif;
 }
 .about-us{
     height: 40rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    margin: 0 5%;
     text-align: left;
     background-color: #fff;
     align-items: normal;
@@ -534,3 +534,149 @@ footer{
 }
 
 /*-------------------- about page end------------- */
+
+/* ------------- products page starts ------------- */
+
+#category h2{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Sora', sans-serif;
+}
+
+.category-shop{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+}
+.category-shop a{
+    margin:2rem 1rem;
+    border: 0.2rem solid var(--font-color);
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+}
+.category-shop a:hover{
+    background-color: var(--font-color);
+    color: var(--white-color);
+    transition: 0.5s linear;
+}
+/* featured product section starts */
+
+#featured h2{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Sora', sans-serif;
+}
+.featured-products{
+    flex-wrap: wrap;
+}
+.featured-products .f-product{
+    width: 30%;
+    margin: 1rem;
+    border: .2rem solid black;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.featured-products .f-product .image{
+    position: relative;
+}
+.featured-products .f-product .image img{
+    height: 30rem;
+}
+.featured-products .f-product .image .icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 1rem;
+    left: 1rem;
+}
+.featured-products .f-product .image .icons a{
+   padding: 1rem;
+   font-size: 2rem;
+   background-color: var(--font-color);
+   color: var(--white-color);
+   border-radius: 50%;
+   margin: 0.5rem;
+   display: none;
+}
+.featured-products .f-product .image .icons a:hover{
+   background-color: var(--primary-color);
+   transition: 0.2s linear;
+}
+.featured-products .hover-img{
+    display: none;
+}
+.featured-products .f-product:hover .hover-img{
+    display: inline;
+}
+.featured-products .f-product:hover .main-img{
+    display: none;
+}
+.featured-products .f-product:hover .image .icons a{
+    display: block;
+}
+.featured-products .f-product .content h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--font-color);
+}
+.featured-products .f-product .content .price{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Sora', sans-serif;
+}
+.featured-products .f-product .content .price span{
+    font-size: 1.8rem;
+    text-decoration: line-through;
+}
+.featured-products .f-product .content .stars{
+    font-size: 1.8rem;
+    color: var(--gold-color);
+    margin-bottom: 1rem;
+}
+/* -------------- featured product section ends ----------------*/
+/* -------------- deals section start ----------------*/
+
+#deals h2{
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+}
+.deal-section .deal{
+    position: relative;
+    border: .2rem  solid black;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    overflow: hidden;
+}
+.deal-section .deal img{
+    width: 100%;
+    height: 100%;
+}
+.deal-section .deal .content{
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+}
+.deal-section .deal .content span,h3{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.deal-section .deal .content a{
+    display: inline-block;
+}
+.deal-section .deal:hover  img{
+    transform: scale(1.1);
+    transition: 0.2s linear;
+}
+
+/* -------------- deals section ends ----------------*/
+
+
+/* ------------- products page ends ------------- */
