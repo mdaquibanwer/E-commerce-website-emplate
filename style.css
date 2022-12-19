@@ -850,4 +850,81 @@ footer{
     background-color: var(--primary-color);
     transition: 0.3s linear;
 }
-/* ------------- login page ends ------------------- */
+/* ------------- login and register page ends ------------------- */
+
+/* ------------- cart page starts ------------------- */
+
+#shopping-cart h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    padding: 2rem 0;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+    padding: 1rem 4rem;
+}
+.product-container .product{
+    background: #fff;
+    border: .2rem solid var(--font-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+.product-container .product i{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+}
+.product-container .product i:hover{
+    color: var(--font-color);
+    transition: 0.5s linear;
+}
+.product-container .product img{
+    width: 12rem;
+}
+.product-container .product .content h3{
+    text-align: left;
+    margin: 1rem auto;
+    font-size: 2rem;
+    color: var(--font-color);
+}
+
+.product-container .product .content form span{
+    font-size: 1.5rem;
+}
+
+
+.product-container .product .content form input{
+    width: 7rem;
+    padding: 1rem 0.5rem;
+    background: #eee;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--font-color);
+}
+.product-container .product .content .price{
+    font-size: 2rem;
+    padding-top: 1rem;
+    font-family: 'Sora', sans-serif;
+}
+.product-container .product .content .price span{
+    font-size: 1.8rem;
+    text-decoration: line-through;
+}
+
+#shopping-cart .cart-total{
+    margin: 4rem;
+    height: 20rem;
+}
+/* ------------- cart page ends ------------------- */
